@@ -5,9 +5,24 @@ name = "shell"
 enabled = true
 
 [[analyzers]]
-name = "javascript"
+name = "ruby"
 enabled = true
 
 [[analyzers]]
-name = "ruby"
+name = "javascript"
+enabled = true
+
+  [analyzers.meta]
+  plugins = ["vue"]
+
+[[analyzers]]
+name = "test-coverage"
+enabled = true
+
+[[transformers]]
+name = "prettier"
+enabled = true
+
+[[transformers]]
+name = "rubocop"
 enabled = true
