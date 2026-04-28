@@ -23,3 +23,10 @@ window.onload = () => {
     render: h => h(App),
   }).$mount('#app');
 };
+
+window.onload = () => {
+  window.WOOT_SURVEY = new Vue({
+    i18n: i18nConfig,
+    render: h => h(App),
+  }).$mount('#app');
+};
